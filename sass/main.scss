@@ -1,0 +1,100 @@
+@import './other/_variables.scss';
+@import './other/_mainBlock.scss';
+@import './other/_start.scss';
+@import './other/_about.scss';
+@import './other/_team.scss';
+@import './other/_services.scss';
+@import './other/_clients.scss';
+@import './other/_work.scss';
+@import './other/_testimonials.scss';
+@import './other/_contact.scss';
+@import './other/_foot.scss';
+@import './other/animation/_anim.scss';
+@import './other/media/_media.scss';
+@import './includes/slick/slick.scss';
+@import './includes/slick/slick-theme.scss';
+ 
+
+ 
+
+body { 
+    font-family: 'Open Sans';
+//    font-family: 'Lato'; 
+}
+
+body, p, h1, h2, h3, h4{
+    padding: 0;
+    margin: 0;
+}
+
+
+a:hover { 
+    text-decoration: none;
+}
+
+//SHAPE 
+.shape {
+   
+    .wrappShape {
+        
+        display: flex;
+        justify-content: center;
+        .topShape {
+            height: 5px;
+            width: 100px;
+            background-color: $colorMainStyle;
+//            opacity: 0;
+            
+        }
+        
+//        .topShape.visible {
+//            animation-delay: 0.5s;
+//            animation: shapeTop 1s;
+//        }
+
+        .bottShape {
+            
+            height: 5px;
+            width: 60px;
+            background-color: #B17B3C; 
+            margin-bottom: 90px;
+            margin-top: 10px;
+//            opacity: 0;
+        }
+//        
+//        .bottShape.visible {
+//            animation-delay: 0.5s;
+//            animation: shapeBott 1.5s;
+//        }
+    }
+    
+}
+
+
+//SLICK SLIDER 
+.slick-slide {
+    outline: none !important;
+}
+.slick-dots li button {
+
+    width: 10px !important;
+    height: 10px !important;
+    background: #fff !important; 
+}
+
+.slick-dots li.slick-active button {
+    background: $colorMainStyle !important; 
+}
+
+.slick-dots li button:before {
+    font-size: 0 !important;
+}
+
+.slick-dots {
+    top: none !important;
+    bottom: -100px !important;
+    display: flex !important;
+    justify-content: center;
+}
+
+//.slick-cloned { display: none !important; }

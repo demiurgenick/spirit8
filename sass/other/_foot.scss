@@ -1,0 +1,59 @@
+@import '_variables.scss';
+
+
+.foot {
+    background-color: $colorMainBlackBlcok;
+    padding: 40px 0;
+    p {
+        float: left;
+        font-size: 12px;
+        color: #b2b2b2;
+        text-transform: uppercase;
+        span {
+            font-weight: bold;
+        }
+    }
+    
+    .foot-icon {
+        float: right;
+        a {
+            margin-right: 10px;
+            display: inline-block;
+            border-radius: 50%;
+            .foot-iconBlock {
+                height: 32px;
+                width: 32px;
+                display: inline-block;
+                
+                background-repeat: no-repeat;
+            }
+            
+            transition: all 0.5s;
+        }
+        
+        a:last-child {
+            margin-right: 0;
+        }
+        
+        a:hover {
+//            background-color: #858585;
+            transform: scale(1.1);
+        }
+        
+        .facebook {
+            background-image: url(../img/facebook.png);
+        }
+        .twitter {
+            background-image: url(../img/twitter.png);
+        }
+        .google {
+            background-image: url(../img/google.png);
+        }
+        .linkedin {
+            background-image: url(../img/linkedin.png);
+        }
+        .dribbble {
+            background-image: url(../img/dribbble.png);
+        }
+    }
+}

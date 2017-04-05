@@ -1,0 +1,85 @@
+@import '_variables.scss';
+
+.team {
+    padding-bottom: 170px;
+    h1 {
+        font-size: $fontSizeHead;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        
+        span {
+            font-weight: bold;
+        }
+        padding-bottom: 30px;
+    }
+    
+    padding-top: 100px;
+    background-color: $colorMainBlackBlcok;
+    
+    
+    
+    //TEAM PEROSNS
+    .teamPerson {
+        .slider-body {
+            .teamItem {
+    //            background-color: #fff;
+                text-align: center;
+                color: #fff;
+                .wrappPhoto {
+                     display: flex;
+                     justify-content: center;
+                     margin-bottom: 20px;
+                    .teamPhoto {
+                        height: 130px;
+                        width: 130px;
+                        background-color: #D6D6D6;
+                        background-repeat: no-repeat;
+                        border-radius: 50%;
+                    }
+                    #teamPhoto-1 {
+                        background-image: url(../img/js.jpg);
+                        background-size: 125px;
+                        background-position: 0 -10px;
+                    }
+                    #teamPhoto-2 {
+                        background-image: url(../img/vd.jpg);
+                        background-size: 125px;
+                        background-position: 0 -10px;
+                    }
+                    #teamPhoto-3 {
+                        background-image: url(../img/ss.jpg);
+                        background-size: 130px;
+                        background-position: 0px 0;
+                    }
+                     #teamPhoto-4 {
+                        background-image: url(../img/jl.jpg);
+                        background-size: cover;
+                        background-position: 0 -10px;
+                    }
+                    #teamPhoto-5 {
+                        background-image: url(../img/dl.jpg);
+                        background-size: 200px;
+                        background-position: -20px 0;
+                    }
+                }
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+
+
+                }
+                p {
+                    font-size: 16px;
+                    margin-bottom: 40px;
+                }
+                .team-decs {
+                    font-size: 14px;
+
+                }
+
+            }
+        }
+        
+    }
+}

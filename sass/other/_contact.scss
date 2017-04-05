@@ -1,0 +1,95 @@
+@import '_variables.scss';
+
+
+.contact {
+    padding-top: 100px;
+    h1 {
+        color: #222;
+        text-align: center;
+        font-size: $fontSizeHead;
+        text-transform: uppercase;
+        span {
+            font-weight: bold;
+        }
+        padding-bottom: 40px;
+    }
+    
+    .contactDesc {
+        font-size: 16px;
+        color: #6c6c6c;
+        font-style: italic;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    
+    
+    //FORM
+    .contactForm {
+        form {
+            input, textarea {
+                width: 100%;
+                outline:none;
+                padding: 5px 10px;
+            }
+            input:focus, textarea:focus {
+                border: 2px solid $colorMainStyle;
+            }
+            textarea {
+                resize: none;
+                margin-bottom: 30px;
+                height: 165px;
+            }
+            #nameUser {
+                margin-bottom: 50px;
+            }
+            
+            #contactSend {
+                background-color: $colorMainStyle;
+                border: none;
+                height: 40px;
+                color: #fff;
+                font-size: 16px;
+                margin-bottom: 105px;
+                transition: all 0.5s;
+                
+            }
+            
+            #contactSend:hover {
+                transition: all 0.5s;
+                transform: scale(1.1);
+            }
+            label {
+                color: #636363;
+                font-size: 14px;
+                span {
+                    color: #db0000;
+                }
+                padding-bottom: 10px;
+            }
+            
+            input.inputError, textarea.inputError {
+                border: 1px solid red;
+                box-shadow: 0 0 20px rgba(207,30,30,0.7); 
+            }
+            
+            input.inputOk, textarea.inputOk {
+                border: 1px solid green;
+                box-shadow: 0 0 20px rgba(207,30,30,0.7); 
+            }
+            
+            .error {
+                position: absolute;
+                top: 45px;
+                right: 25px;
+                color: red;
+            }
+            
+            .ok {
+                position: absolute;
+                top: 45px;
+                right: 25px;
+                color: green;
+            }
+        }
+    }
+}

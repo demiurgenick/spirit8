@@ -1,0 +1,176 @@
+@import '_variables.scss';
+
+.work {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    h1 {
+        color: #222;
+        text-align: center;
+        font-size: $fontSizeHead;
+        text-transform: uppercase;
+        span {
+            font-weight: bold;
+        }
+        padding-bottom: 40px;
+    }
+    
+    p.work-desc {
+        font-size: 16px;
+        text-align: center;
+        color: #6c6c6c;
+        font-style: italic;
+        padding-bottom: 115px;
+    }
+    
+    
+    //PORTFOLIO
+    .portfolio {
+        .port-menu {
+            text-align: right;
+            font-size: 18px;
+            p.filter {
+                color: #222222;
+                text-transform: uppercase;
+                float: left;
+                padding-bottom: 50px;
+            }
+            .port-nav {
+                a {
+                    color: #6c6c6c;
+                    border-right: 1px solid #6c6c6c;
+                    padding: 0 15px;
+                    
+                }
+                a:last-child {
+                    border: none;
+                    padding-right: 0;
+                }
+            }
+            
+            
+            .clearfix {
+                clear: both;
+            }
+        }
+        
+        .port-body {
+            
+            .port-block {
+                background-repeat: no-repeat;
+                background-size: 90% 100%;
+                height: 240px;
+                position: relative;
+                display: none;
+                
+                .port-desc {
+                    height: 240px;
+                    background-color: #272727;
+                    position: absolute;
+//                    top: 100px;
+                    left: 0;
+                    width: 90%;
+                    opacity: 0;
+                    transition: all 0.5s;
+                    text-align: center;
+                    p.port-desc-head {
+                        margin-top: 65px;
+                        margin-bottom: 15px;
+                        color: #fff;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                    }
+                    p.port-desc-mini {
+                        color: #b2b2b2;
+                        font-size: 14px;
+                        margin-bottom: 30px;
+                    }
+                    .port-desc-button-wrapp {
+                        display: flex;
+                        justify-content: center;
+                        .port-desc-button {
+                            background-image: url(../img/plus.png);
+                            background-color: transparent;
+                            border: none;
+                            height: 40px;
+                            width: 40px;
+                            transition: all .5s;
+                        }
+                        .port-desc-button:hover {
+                            cursor: pointer;
+                            transform: scale(1.3);
+                            transition: all .5s;
+                        }
+                        .port-desc-button:focus {
+                            outline: none;
+                        }
+                    }
+                    
+                }
+            }
+            .visible {
+                display: block !important;
+            }
+            .port-block:last-child {
+                margin-right: 0;
+            }
+            .port-block:hover .port-desc {
+                opacity: 1;
+                transition: all 0.5s;
+            }
+            .port-web {
+                background-image: url(../img/web.png);
+               
+                margin-bottom: 30px;
+            }
+            .port-photo {
+                background-image: url(../img/photo.png);
+                margin-bottom: 30px;
+            }
+            .port-mobile {
+                background-image: url(../img/mobile.png);
+                margin-bottom: 30px;
+            }
+        }
+    }
+    
+    
+    
+}
+
+//MODAL
+#webModal {
+    background-image: url(../img/web.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+#mobileModal {
+    background-image: url(../img/mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+#photoModal {
+    background-image: url(../img/photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.modal-header {
+    text-align: center;
+}
+
+.modal-body {
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+    h4 {
+        
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        
+    }
+}

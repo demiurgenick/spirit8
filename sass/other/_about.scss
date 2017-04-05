@@ -1,0 +1,131 @@
+@import '_variables.scss';
+@import './animation/_anim.scss';
+
+.about {
+    padding-top: 100px;
+    
+    .aboutImg {
+        padding: 0;
+        margin: 0;
+        height: 500px;
+//        overflow: hidden;
+        .visible {
+            animation: macAnim 2s;
+        }
+        .mac {
+            
+            background-image: url(../img/mac.png); 
+            background-repeat: no-repeat;
+//            background-size: 510px 440px;
+            padding: 0;
+            margin: 0;
+            img {
+                opacity: 0;
+                
+            }
+            img.visible {
+                animation: shadowAnim 1s;
+                animation-delay: 2s;
+                animation-fill-mode: forwards; 
+            }
+            
+            
+        }
+    }
+    
+    .aboutText {
+        
+        .about-shape {
+   
+            .about-wrappShape {
+                .about-topShape { 
+                    height: 5px;
+                    width: 100px;
+                    background-color: $colorMainStyle;
+                    margin-bottom: 30px;
+                }
+
+            }
+        } 
+        
+        p.about-par {
+            font-size: 20px;
+            color: #636363;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 34px;
+            color: #222222;
+            padding-bottom: 20px;
+        }
+        
+        p.about-desc { 
+            color: #6c6c6c;
+            font-size: 18px;
+            padding-bottom: 50px;
+        }
+        
+        .about-radio {
+            .about-radio-item {
+                margin-bottom: 20px;
+                font-size: 16px;
+                color: #5a5a5a;
+                font-style: italic;
+                span.radio-bold {
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-style: normal; 
+                }
+            }
+        }
+        
+        .about-btn {
+            border: 2px solid #333;
+            border-radius: 5px;
+            width: 195px; 
+            text-align: center;
+            height: 50px;
+            margin-bottom: 100px;
+            
+            .about-btnWrapp {
+                
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+//                padding-top: 10px;
+                transition: all 0.5s;
+                p {
+                    align-self: center;
+                }
+            }
+            
+            a:hover {
+                background-color: #333;
+                transition: all 0.5s;
+                
+            }
+            
+             a:hover p{
+                color: #fff;
+                
+            }
+            
+            p {
+                font-size: 12px;
+                color: #616161;
+                text-transform: uppercase;
+                display: inline; 
+                align-self: center;
+                
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

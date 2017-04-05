@@ -1,0 +1,59 @@
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+//ABOUT
+@include keyframes (macAnim) {
+    0% {
+        transform: translateX(-700px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@include keyframes (shadowAnim) {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+//SHAPE
+
+@include keyframes (shapeTop) {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+            
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+@include keyframes (shapeBott) {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+            
+    }
+    80% {
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}

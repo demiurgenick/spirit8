@@ -1,0 +1,131 @@
+@media screen and (max-width: 800px) {
+    //_start
+    .humb {
+        display: block !important;
+        position: absolute;
+        right: 10px;
+        i {
+            font-size: 20px;
+        }
+    }
+    
+//    .humb:hover ~ .start-nav{
+//        top: 35px;
+//    }
+    
+    .mainBlackBlock {
+        .start-headinWrapp {
+            .visible {
+                margin-top: 100px;
+                transition: all .5s;
+            } 
+            .start-headin {
+                transition: all .5s;
+            }
+        }
+        
+    }
+    .start-headWrap {
+        .visible {
+            top: 35px !important;
+        }
+        .start-nav {
+            display: block !important;
+            position: absolute;
+            top: -300px;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            transition: all .5s;
+            
+
+
+
+            .navElement {
+
+                a {
+                    margin-bottom: 10px;
+                    display: block;
+                    font-size: 20px;
+                    background-color: rgba(23, 12, 12, .3);
+                    border-bottom: 2px solid $colorMainStyle;
+                    border-radius: 20px;
+
+                }
+
+                .navDecor {
+                    display: none !important; 
+
+
+                    .navShape {
+                        display: none !important;
+
+                    }
+
+                }
+
+
+            }
+
+
+
+        }
+    }
+    
+    
+    
+    //_abotu
+    .mac {
+        background-size: contain;
+        overflow-x: hidden;
+    }
+    .aboutText {
+        margin-top: 100px;
+    }
+    
+    
+    //_work
+    .port-body {
+        .row {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+        }
+    }
+    .port-block {
+        background-size: 100% 100% !important;
+    }
+    .port-desc {
+        width: 100% !important;
+    }
+    p.filter {
+        text-align: left;
+        float: none !important;
+        padding-bottom: 50px;
+    }
+    .port-nav {
+        a {
+            display: block;
+            text-align: left;
+            border: none !important;
+            margin-bottom: 20px;
+        }
+    }
+    
+    
+    //_foot 
+    .foot {
+        p {
+            float: none !important; 
+            text-align: center;
+        }
+        .foot-icon {
+            float: none !important;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+    }
+
+}

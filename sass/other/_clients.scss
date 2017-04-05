@@ -1,0 +1,46 @@
+@import '_variables.scss';
+
+.clients {
+    background-color: $colorMainBlackBlcok;
+    padding-top: 100px;
+    padding-bottom: 210px;
+    h1 {
+        font-size: $fontSizeHead;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+    
+    .clientsList {
+        .slider-body-client {
+            .clientsList-item {
+                height: 30px;
+                background-repeat: no-repeat;
+                
+//                padding: 0;
+            }
+
+            #item-1 {
+                background-image: url(../img/chanel.png);
+            }
+            #item-2 {
+                background-image: url(../img/zara.png);
+            }
+            #item-3 {
+                background-image: url(../img/gaur.png);
+            }
+            #item-4 {
+                background-image: url(../img/lancome.png);
+            }
+            #item-5 {
+                background-image: url(../img/lacoste.png);
+            }
+            #item-6 {
+                background-image: url(../img/chanel.png);
+            }
+        }
+        
+        
+    }
+}
